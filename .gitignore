@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Сборка (PyInstaller): артефакты и рабочий каталог.
+# ВНИМАНИЕ: build/ НЕ игнорируем — там наши build-скрипты.
+dist/
+.pyi-build/
+
+# Приложение Tauri
+node_modules/
+app/src-tauri/target/
+app/src-tauri/gen/
+app/src-tauri/resources/
+
+# Шейдеры скачиваются при первом запуске (shaders.py)
+mpv-profiles/shaders/
+
+# Локальные заметки/черновики
+*.local
+scratch/
+
+# Идентификатор Google-клиента для сборки (вход через Google)
+packaging/google_client.json

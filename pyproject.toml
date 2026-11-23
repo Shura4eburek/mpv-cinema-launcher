@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mpv-cinema-launcher"
+version = "0.1.0"
+description = "Лаунчер для просмотра HLS (.m3u8) потоков в mpv с апскейлом под железо"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "selenium",
+    "keyring",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+build = ["pyinstaller>=6"]
+
+[project.scripts]
+mpvplay = "mpv_launcher.cli:main"
+mpvplay-gui = "mpv_launcher.gui:gui_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

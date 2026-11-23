@@ -1,0 +1,8 @@
+В состав приложения входит Lampac NextGen 1.87.6, отдельная программа под лицензией
+GNU Affero General Public License v3.0 (файл LICENSE). Программа не изменена, из поставки
+убраны компоненты, которые приложение не использует.
+
+Исходный код этой версии:
+https://github.com/lampac-nextgen/lampac/tree/1.87.6
+
+Также входит Microsoft ASP.NET Core Runtime 10.0.14 (лицензия MIT, см. каталог runtime).
